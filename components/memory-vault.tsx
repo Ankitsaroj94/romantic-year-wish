@@ -36,7 +36,7 @@ export function MemoryVault({ onComplete }: { onComplete: () => void }) {
     <div className="flex flex-col items-center justify-center h-full p-4">
       <h2 className="text-3xl font-serif mb-8 text-center">Some moments from this year</h2>
 
-      <div className="relative w-72 h-96 mb-12" onClick={handleTap}>
+      <div className="relative w-80 h-[28rem] mb-12" onClick={handleTap}>
         <AnimatePresence mode="popLayout">
           {stack.map((memory, index) => (
             <motion.div

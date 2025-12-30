@@ -1,12 +1,14 @@
 {
-  "name": "romantic-year-wish",
+  "name": "happy-new-year",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "host": "next dev -H 0.0.0.0",
     "lint": "eslint .",
-    "start": "next start"
+    "start": "next start",
+    "start:host": "next start -H 0.0.0.0"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "latest",

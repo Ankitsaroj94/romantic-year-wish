@@ -28,7 +28,7 @@ Me`
       </motion.h2>
 
       <div
-        className="relative w-full max-w-[320px] aspect-[3/4.5] cursor-pointer group [perspective:1200px]"
+        className="relative w-full max-w-[420px] aspect-[3/4.5] cursor-pointer group [perspective:1200px]"
         onClick={() => setIsFlipped(!isFlipped)}
       >
         <motion.div
