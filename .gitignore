@@ -29,3 +29,9 @@ next-env.d.ts
 # images
 /public/images
 /images
+
+
+# firebase
+.firebase/
+firebase-debug.log*
+.firebaserc
