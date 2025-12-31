@@ -6,12 +6,12 @@ import { useState } from "react"
 
 // Using provided images for polaroids
 const MEMORIES = [
-  { id: 1, src: "/images/IMG_20241130_150454.jpg", caption: "Sweet moments" },
-  { id: 2, src: "/images/IMG_20250708_210145.jpg", caption: "Beautiful smiles" },
-  { id: 3, src: "/images/Screenshot_20251231_110747.jpg", caption: "Unforgettable days" },
-  { id: 4, src: "/images/Screenshot_20251231_110828.jpg", caption: "Cherished memories" },
-  { id: 5, src: "/images/Screenshot_20251231_111050.jpg", caption: "Adventures together" },
-  { id: 6, src: "/images/Snapchat-1455406978.jpg", caption: "Love You ❤️" },
+  { id: 1, src: "/placeholder.svg", caption: "Sweet moments" },
+  { id: 2, src: "/placeholder.svg", caption: "Beautiful smiles" },
+  { id: 3, src: "/placeholder.svg", caption: "Unforgettable days" },
+  { id: 4, src: "/placeholder.svg", caption: "Cherished memories" },
+  { id: 5, src: "/placeholder.svg", caption: "Adventures together" },
+  { id: 6, src: "/placeholder.svg", caption: "Love You ❤️" },
 ]
 
 export function MemoryVault({ onComplete }: { onComplete: () => void }) {
