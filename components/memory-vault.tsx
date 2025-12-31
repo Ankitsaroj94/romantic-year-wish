@@ -6,12 +6,12 @@ import { useState } from "react"
 
 // Using provided images for polaroids
 const MEMORIES = [
-  { id: 1, src: "/images/7.jpg", caption: "Sweet moments" },
-  { id: 2, src: "/images/6.jpg", caption: "Always laughing" },
-  // Adding placeholders for more
-  { id: 3, src: "/couple-walking-in-park.jpg", caption: "Our first walk" },
-  { id: 4, src: "/couple-eating-ice-cream.jpg", caption: "Ice cream date" },
-  { id: 5, src: "/serene-sunset-landscape.png", caption: "Watching sunsets" },
+  { id: 1, src: "/images/IMG_20241130_150454.jpg", caption: "Sweet moments" },
+  { id: 2, src: "/images/IMG_20250708_210145.jpg", caption: "Beautiful smiles" },
+  { id: 3, src: "/images/Screenshot_20251231_110747.jpg", caption: "Unforgettable days" },
+  { id: 4, src: "/images/Screenshot_20251231_110828.jpg", caption: "Cherished memories" },
+  { id: 5, src: "/images/Screenshot_20251231_111050.jpg", caption: "Adventures together" },
+  { id: 6, src: "/images/Snapchat-1455406978.jpg", caption: "Love You ❤️" },
 ]
 
 export function MemoryVault({ onComplete }: { onComplete: () => void }) {
@@ -19,7 +19,8 @@ export function MemoryVault({ onComplete }: { onComplete: () => void }) {
   const [tapCount, setTapCount] = useState(0)
 
   const handleTap = () => {
-    if (tapCount >= MEMORIES.length * 2) {
+    // Transition after viewing all photos once
+    if (tapCount >= MEMORIES.length - 1) {
       onComplete()
       return
     }
